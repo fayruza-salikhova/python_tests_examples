@@ -1,0 +1,39 @@
+Character Classes
+.       - Any Character Except New Line
+\d      - Digit (0-9)
+\D      - Not a Digit (0-9)
+\w      - Word Character (a-z, A-Z, 0-9, _)
+\W      - Not a Word Character
+\s      - Whitespace (space, tab, newline)
+\S      - Not Whitespace (space, tab, newline)
+
+Anchors
+\b      - Word Boundary
+\B      - Not a Word Boundary
+^       - Beginning of a String
+$       - End of a String
+
+Character Sets (or Character Classes in Brackets)
+[]      - Matches Characters in brackets
+
+Alternation & Grouping
+[^ ]    - Matches Characters NOT in brackets
+|       - Either Or
+( )     - Group
+(Mr|Mrs|Ms)
+
+[abc], [^abc] — Character Sets (one symbol checking: a or b or c)
+[^a-zA-Z], [1-5] — Ranges (one symbol checking)
+^ in brackets means NOT
+
+Quantifiers:
+*       - 0 or More
++       - 1 or More
+?       - 0 or One
+{3}     - Exact Number
+{3,4}   - Range of Numbers (Minimum, Maximum)
+
+
+#### Sample Regexs ####
+
+[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
