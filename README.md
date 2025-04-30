@@ -16,8 +16,14 @@ My Implementation
 
 ### Installation
 
+> pipenv install
+
+> pipenv install pytest --dev
+
 > pip install selenium
+
 > pip install pytest
+
 
 ### Start
 
@@ -27,6 +33,8 @@ My Implementation
 
 Video Tutorial
 > https://www.youtube.com/watch?v=rCQuHk3zFhQ&ab_channel=SDETAddaForQAAutomation
+
+> https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 My Implementation
 > Results and code written after completing the lesson are in the `page_object_examples_selenium` folder.

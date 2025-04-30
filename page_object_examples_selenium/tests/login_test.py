@@ -1,21 +1,21 @@
 import pytest
-from page_object_examples_selenium.pages.login_page import LoginPage
+from pages.login_page import LoginPage
 
-@pytest.mark.setup_driver
+@pytest.mark.login
 def test_invalid_login_invalid_username(setup_driver_login_scenarios):
     driver = setup_driver_login_scenarios
     login_page = LoginPage(driver)
     login_page.login("InvalidUser", "admin123")
     assert "Invalid credentials" in login_page.get_invalid_credentials_message()
 
-@pytest.mark.setup_driver
+@pytest.mark.login
 def test_invalid_login_invalid_password(setup_driver_login_scenarios):
     driver = setup_driver_login_scenarios
     login_page = LoginPage(driver)
     login_page.login("Admin", "InvalidPassword")
     assert "Invalid credentials" in login_page.get_invalid_credentials_message()
 
-@pytest.mark.setup_driver
+@pytest.mark.login
 def test_valid_login(setup_driver_login_scenarios):
     driver = setup_driver_login_scenarios
     login_page = LoginPage(driver)

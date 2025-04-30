@@ -1,7 +1,7 @@
 import pytest
 
-from page_object_examples_selenium.pages.sidebar_page import SidebarPage
-from page_object_examples_selenium.pages.admin_page import AdminPage
+from pages.sidebar_page import SidebarPage
+from pages.admin_page import AdminPage
 
 @pytest.mark.sidebar
 def test_sidebar_navigation_to_admin(setup_driver):
