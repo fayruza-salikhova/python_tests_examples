@@ -27,9 +27,14 @@ My Implementation
 
 ### Start
 
+> pipenv shell
+
 > pytest
 
 > pytest -m login (if test has a marker "login")
+ 
+> \python_tests_examples\python_tests_examples\page_object_examples_selenium> pytest --headless -v
+
 
 Video Tutorial
 > https://www.youtube.com/watch?v=rCQuHk3zFhQ&ab_channel=SDETAddaForQAAutomation
