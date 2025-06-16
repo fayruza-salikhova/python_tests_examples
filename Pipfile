@@ -10,6 +10,7 @@ selenium = "*"
 [dev-packages]
 selenium = "*"
 pytest = "*"
+requests = "*"
 
 [requires]
 python_version = "3.12"
